@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "358490476262",
-    "firebase_url": "https://madgroup-1519f.firebaseio.com",
-    "project_id": "madgroup-1519f",
-    "storage_bucket": "madgroup-1519f.appspot.com"
+    "project_number": "959716522956",
+    "firebase_url": "https://mad-new-968de.firebaseio.com",
+    "project_id": "mad-new-968de",
+    "storage_bucket": "mad-new-968de.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:358490476262:android:894bdf3ef0b45ec4d87527",
+        "mobilesdk_app_id": "1:959716522956:android:1abce8bc8ab2b2a2e4fb69",
         "android_client_info": {
           "package_name": "com.example.mad_new"
         }
       },
       "oauth_client": [
         {
-          "client_id": "358490476262-0n5ndhgvr3cjqjdsvfi0tcn02b8694kg.apps.googleusercontent.com",
+          "client_id": "959716522956-pvejioo1ae3mcth255plnb1ldf4o3v1g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mad_new",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "358490476262-7drvvt2geet46lgh3pvdaf72ttqqaq5g.apps.googleusercontent.com",
+          "client_id": "959716522956-p35ktr1sv4dqdf69csuqds85il0tgj4p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCa7x93XJT4PhiRYamrQv5JXGAQGDzzG9I"
+          "current_key": "AIzaSyAFG32SHSnny9rie5rqft4M5jTUdaVPj6k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "358490476262-7drvvt2geet46lgh3pvdaf72ttqqaq5g.apps.googleusercontent.com",
+              "client_id": "959716522956-p35ktr1sv4dqdf69csuqds85il0tgj4p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

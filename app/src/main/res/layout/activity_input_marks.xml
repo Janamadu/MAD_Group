@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EBC715"
-    tools:context=".Input_marks">
+    tools:context =".Input_marks">
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -178,14 +178,16 @@
         android:orientation="horizontal"
         android:layout_marginTop="30dp">
 
-
         <Button
             android:id="@+id/btn"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="submit" />
+            android:text="submit"
+            android:layout_marginLeft="160dp">
+
+        </Button>
 
 
     </LinearLayout>
+
 </RelativeLayout>
