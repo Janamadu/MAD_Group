@@ -18,8 +18,9 @@ import com.google.firebase.database.snapshot.Index;
 import org.w3c.dom.Text;
 
 public class Input_marks extends AppCompatActivity {
-     private Button SUBMIT;
+
      private EditText StudentFullName, Class, IndexNo, Subject1, Subject2, Subject3, Subject4,Subject5, TotalMarks, Average, Position;
+     private Button submit;
      DatabaseReference MADgroup;
      BrighterBee brighterBee;
 
@@ -28,7 +29,7 @@ public class Input_marks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_marks);
 
-        SUBMIT = (Button) findViewById(R.id.btn3);
+        submit = (Button) findViewById(R.id.btn);
         StudentFullName = (EditText) findViewById(R.id.editText1);
         Class = (EditText) findViewById(R.id.editText2);
         IndexNo = (EditText) findViewById(R.id.editText3);
@@ -43,7 +44,7 @@ public class Input_marks extends AppCompatActivity {
         brighterBee = new BrighterBee();
         MADgroup = FirebaseDatabase.getInstance().getReference().child("BrighterBee");
 
-        SUBMIT.setOnClickListener(new View.OnClickListener() {
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
