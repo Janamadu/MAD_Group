@@ -1,26 +1,20 @@
 package com.example.mad_new;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.database.DatabaseError;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.snapshot.Index;
-
-import org.w3c.dom.Text;
 
 public class Input_marks extends AppCompatActivity {
 
-     private EditText StudentFullName, Class, IndexNo, Subject1, Subject2, Subject3, Subject4,Subject5, TotalMarks, Average, Position;
-     private Button submit;
+     private EditText editText1,editText2,editText3,editText4,editText5,editText6,editText7,editText8,editText9,editText10,editText11;
+     private Button btn;
      DatabaseReference MADgroup;
      BrighterBee brighterBee;
 
@@ -29,36 +23,36 @@ public class Input_marks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_marks);
 
-        submit = (Button) findViewById(R.id.btn);
-        StudentFullName = (EditText) findViewById(R.id.editText1);
-        Class = (EditText) findViewById(R.id.editText2);
-        IndexNo = (EditText) findViewById(R.id.editText3);
-        Subject1 = (EditText) findViewById(R.id.editText4);
-        Subject2 = (EditText) findViewById(R.id.editText5);
-        Subject3 = (EditText) findViewById(R.id.editText6);
-        Subject4 = (EditText) findViewById(R.id.editText7);
-        Subject5 = (EditText) findViewById(R.id.editText8);
-        TotalMarks = (EditText) findViewById(R.id.editText9);
-        Average = (EditText) findViewById(R.id.editText10);
-        Position = (EditText) findViewById(R.id.editText11);
+        btn = (Button) findViewById(R.id.btn);
+        editText1 = (EditText) findViewById(R.id.editText1);
+        editText2 = (EditText) findViewById(R.id.editText2);
+        editText3 = (EditText) findViewById(R.id.editText3);
+        editText4 = (EditText) findViewById(R.id.editText4);
+        editText5 = (EditText) findViewById(R.id.editText5);
+        editText6 = (EditText) findViewById(R.id.editText6);
+        editText7 = (EditText) findViewById(R.id.editText7);
+        editText8 = (EditText) findViewById(R.id.editText8);
+        editText9 = (EditText) findViewById(R.id.editText9);
+        editText10 = (EditText) findViewById(R.id.editText10);
+        editText11 = (EditText) findViewById(R.id.editText11);
         brighterBee = new BrighterBee();
         MADgroup = FirebaseDatabase.getInstance().getReference().child("BrighterBee");
 
-        submit.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                int StudentName = Integer.parseInt(StudentFullName.getText().toString().trim());
-                int clas = Integer.parseInt(Class.getText().toString().trim());
-                int Index = Integer.parseInt(IndexNo.getText().toString().trim());
-                int Sub1Mark = Integer.parseInt(Subject1.getText().toString().trim());
-                int Sub2Mark = Integer.parseInt(Subject2.getText().toString().trim());
-                int Sub3Mark = Integer.parseInt(Subject3.getText().toString().trim());
-                int Sub4Mark = Integer.parseInt(Subject4.getText().toString().trim());
-                int Sub5Mark = Integer.parseInt(Subject5.getText().toString().trim());
-                int TotMarks  = Integer.parseInt(TotalMarks.getText().toString().trim());
-                int Avg = Integer.parseInt(Average.getText().toString().trim());
-                int Posi = Integer.parseInt(Position.getText().toString().trim());
+                int StudentName = Integer.parseInt(editText1.getText().toString().trim());
+                int clas = Integer.parseInt(editText2.getText().toString().trim());
+                int Index = Integer.parseInt(editText3.getText().toString().trim());
+                int Sub1Mark = Integer.parseInt(editText4.getText().toString().trim());
+                int Sub2Mark = Integer.parseInt(editText5.getText().toString().trim());
+                int Sub3Mark = Integer.parseInt(editText6.getText().toString().trim());
+                int Sub4Mark = Integer.parseInt(editText7.getText().toString().trim());
+                int Sub5Mark = Integer.parseInt(editText8.getText().toString().trim());
+                int TotMarks  = Integer.parseInt(editText9.getText().toString().trim());
+                int Avg = Integer.parseInt(editText10.getText().toString().trim());
+                int Posi = Integer.parseInt(editText11.getText().toString().trim());
 
 
                 brighterBee.setStudentName(StudentName);
@@ -72,8 +66,6 @@ public class Input_marks extends AppCompatActivity {
                 brighterBee.setTotMarks(TotMarks);
                 brighterBee.setAvg(Avg);
                 brighterBee.setPosi(Posi);
-
-
 
                 MADgroup.push().setValue(brighterBee);
                 Toast.makeText(Input_marks.this,"Data insert successfully",Toast.LENGTH_LONG).show();
