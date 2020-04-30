@@ -16,7 +16,7 @@ public class Input_marks extends AppCompatActivity {
     private EditText editText1,editText2,editText3,editText4,editText5,editText6,editText7,editText8,editText9,editText10,editText11;
     private Button btn;
     DatabaseReference MADgroup;
-    com.example.madmad.BrighterBee brighterBee;
+    com.example.mad_new.BrighterBee brighterBee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class Input_marks extends AppCompatActivity {
         editText9 = (EditText) findViewById(R.id.editText9);
         editText10 = (EditText) findViewById(R.id.editText10);
         editText11 = (EditText) findViewById(R.id.editText11);
-        brighterBee = new com.example.madmad.BrighterBee();
+        brighterBee = new com.example.mad_new.BrighterBee();
         MADgroup = FirebaseDatabase.getInstance().getReference().child("BrighterBee");
 
         btn.setOnClickListener(new View.OnClickListener() {
