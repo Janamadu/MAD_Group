@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Praneeth"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Praneeth" />
         <activity android:name=".Jana" />
         <activity android:name=".P_new1" />
         <activity android:name=".Praneeth_1" />
