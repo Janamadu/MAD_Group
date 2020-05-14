@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_input_marks);
+        setContentView(R.layout.activity_login);
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
